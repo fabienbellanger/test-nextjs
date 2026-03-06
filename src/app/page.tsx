@@ -1,5 +1,6 @@
 import Image from "next/image";
 import { Test } from "@/utils/Test";
+import Link from "next/link";
 
 export default function Home() {
     const test = new Test();
@@ -19,9 +20,9 @@ export default function Home() {
                     {test.hello()}
 
                     <div>
-                        <button type="button" className="btn btn-primary">
-                            My button
-                        </button>
+                        <Link href="/admin" className="btn btn-primary">
+                            Admin zone
+                        </Link>
                     </div>
                 </div>
             </main>
