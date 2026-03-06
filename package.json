@@ -8,12 +8,15 @@
         "start": "next start",
         "lint": "biome check",
         "format": "biome format --write",
-        "fix": "biome check --fix"
+        "fix": "biome check --fix",
+        "audit": "bun audit",
+        "update-bun": "bun update --latest",
+        "clean": "rm -rf node_modules package-lock.json bun.lock && npm cache clean --force"
     },
     "dependencies": {
         "next": "16.1.6",
-        "react": "19.2.3",
-        "react-dom": "19.2.3"
+        "react": "19.2.4",
+        "react-dom": "19.2.4"
     },
     "devDependencies": {
         "@biomejs/biome": "2.4.6",
