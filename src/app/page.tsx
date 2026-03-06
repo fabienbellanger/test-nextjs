@@ -3,11 +3,10 @@ import { Test } from "@/utils/Test";
 
 export default function Home() {
     const test = new Test();
-    const hello = test.hello();
 
     return (
-        <div className="flex min-h-screen items-center justify-center">
-            <main className="flex flex-col items-center sm:items-start justify-between min-h-screen w-full max-w-6xl py-32 px-16">
+        <div className="flex items-center justify-center min-h-screen">
+            <main className="flex flex-col items-center justify-between min-h-screen w-full max-w-6xl py-8 px-8">
                 <Image
                     className="dark:invert"
                     src="/next.svg"
@@ -16,7 +15,7 @@ export default function Home() {
                     height={20}
                     priority
                 />
-                <div>{hello}</div>
+                <div>{test.hello()}</div>
             </main>
         </div>
     );
