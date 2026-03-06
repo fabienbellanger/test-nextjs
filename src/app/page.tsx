@@ -16,7 +16,6 @@ export default function Home() {
                     height={20}
                     priority
                 />
-                <div>My first Next.js app</div>
                 <div>{hello}</div>
             </main>
         </div>

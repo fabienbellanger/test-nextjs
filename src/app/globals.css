@@ -1,7 +1,10 @@
 @import "tailwindcss";
 @plugin "daisyui" {
-  themes: dim --default, dim --prefersdark, light;
-  logs: true;
+    themes:
+        dim --default,
+        dim --prefersdark,
+        light;
+    logs: true;
 }
 
 body {

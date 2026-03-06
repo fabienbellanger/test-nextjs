@@ -1,5 +1,5 @@
 export class Test {
     hello(): string {
-        return "Hello, world!";
+        return "My first Next.js app!";
     }
 }
