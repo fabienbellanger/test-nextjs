@@ -6,7 +6,7 @@ export default function Home() {
 
     return (
         <div className="flex items-center justify-center min-h-screen">
-            <main className="flex flex-col items-center justify-between min-h-screen w-full max-w-6xl py-8 px-8">
+            <main className="flex flex-col items-center sm:items-start justify-between min-h-screen w-full max-w-6xl py-8 px-8">
                 <Image
                     className="dark:invert"
                     src="/next.svg"
@@ -15,7 +15,15 @@ export default function Home() {
                     height={20}
                     priority
                 />
-                <div>{test.hello()}</div>
+                <div>
+                    {test.hello()}
+
+                    <div>
+                        <button type="button" className="btn btn-primary">
+                            My button
+                        </button>
+                    </div>
+                </div>
             </main>
         </div>
     );
